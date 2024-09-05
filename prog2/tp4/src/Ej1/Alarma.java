@@ -32,11 +32,15 @@ public class Alarma {
             for(Aberturas ab : aberturas){
                 if(ab.getSensor().isAnomalia()){
                     this.alarmaLuminosa.encenderAlarmaLuminosa();
+                }else{
+                    System.out.println(false);
                 }
             }
             for(Habitacion h : habitacions){
                 if(h.getSensor().isAnomalia()){
                     this.alarmaLuminosa.encenderAlarmaLuminosa();
+                }else{
+                    System.out.println(false);
                 }
             }
         }
@@ -76,6 +80,7 @@ public class Alarma {
 
             // Activar la alarma
             alarma.activarAlarma();
+            alarma.comprobar();
 
             // Simular una anomalía
             puertaPrincipal.abrir(); // Esto activa el sensor de la puerta
