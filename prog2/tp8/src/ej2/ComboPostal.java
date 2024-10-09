@@ -6,6 +6,7 @@ import java.util.List;
 public class ComboPostal extends Envio {
     private List<Envio>envios;
     private boolean destinatarioRemitente;
+
     public ComboPostal(String numeroTracking, String destinatario, String direccionDestinatario, String remitente, String direccionRemitente, double peso, boolean envioADomicilio) {
         super(numeroTracking, null, null, null, null, 0, envioADomicilio);
         this.envios = new ArrayList<>();
