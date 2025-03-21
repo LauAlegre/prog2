@@ -25,4 +25,5 @@ public class Link extends ObjetoSA{
         return TAM_DEFECTO;
     }
 
+
 }

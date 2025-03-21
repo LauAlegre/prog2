@@ -2,7 +2,7 @@ package ej1;
 
 import java.time.LocalDate;
 
-public class SistemaArchivos {
+public class Main {
     public static void main(String[] args) {
         // Crear archivos
         Archivo archivo1 = new Archivo(LocalDate.of(2024, 9, 1), "archivo1.txt", 20.5);
